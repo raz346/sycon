@@ -46,7 +46,7 @@ services:
       dockerfile: ../backend/Dockerfile-local
     image: api:v1
     ports:
-      - '3000:3000'
+      - '3002:3000'
     tty: true
     volumes:
       - '../backend:/app'
@@ -71,7 +71,7 @@ services:
       dockerfile: ../backend/Dockerfile-local
     image: api-test:v1
     ports:
-      - '3002:3000'
+      - '3003:3000'
     tty: true
     volumes:
       - '../backend:/app'
@@ -103,7 +103,7 @@ services:
       dockerfile: Dockerfile-local
     image: frontend:v1
     ports:
-      - '3001:3000'
+      - '3005:3000'
     tty: true
     volumes:
       - ../frontend/:/app
